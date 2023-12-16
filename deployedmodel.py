@@ -12,8 +12,30 @@ st.write("""
 st.divider()
 st.image('pexels-pixabay-52521.jpg',width=700)
 st.divider()
-st.caption('To avoid error, please ensure that the color depth is set to 24 bit & to upload a square image e.g. 100x100, 60x60.')
+st.write('To avoid error, please ensure that the color depth is set to 24 bit & to upload a square image e.g. 100x100, 60x60.')
 st.divider()
+
+
+
+if 'radio_selected' not in st.session_state:
+    st.session_state.radio_selected = False
+
+# Radio buttons to select an option
+selected_option = st.radio("Select an option", ["Option 1", "Option 2", "Option 3"])
+
+# Update session state based on radio button selection
+st.session_state.radio_selected = bool(selected_option)
+
+# Upload button that is disabled until a radio button is selected
+upload_button_disabled = not st.session_state.radio_selected
+uploaded_file = st.file_uploader("Upload a file", key="file_uploader", disabled=upload_button_disabled)
+
+# Display uploaded file content if available
+if uploaded_file is not None:
+    st.write("File content:")
+    st.write(uploaded_file.read())
+
+
 file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
 st.sidebar.write('This model aims to classify the species of the uploaded image.')
 import cv2
@@ -35,4 +57,4 @@ else:
     prediction=import_and_predict(image,model)
     class_names=['kirmizi','siirt']
     string="OUTPUT : "+class_names[prediction]
-    st.success(string)
+    st.info(string)
