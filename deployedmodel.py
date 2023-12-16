@@ -10,11 +10,17 @@ st.write("""
 # Pistachio species identifier"""
 )
 st.divider()
-st.image('pexels-pixabay-52521.jpg', caption='nuts',width=700)
+st.image('pexels-pixabay-52521.jpg',width=700)
 st.divider()
 st.caption('To avoid error, please ensure that the color depth is set to 24 bit & to upload a square image e.g. 100x100, 60x60.')
 st.divider()
 file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
+
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
+
 
 import cv2
 from PIL import Image,ImageOps
