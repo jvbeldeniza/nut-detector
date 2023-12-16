@@ -1,3 +1,2 @@
-tensorflow==2.14.0 
-libgl1
+tensorflow
 opencv-python
