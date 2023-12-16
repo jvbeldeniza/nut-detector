@@ -1,2 +1,2 @@
 tensorflow==2.14.0 
-opencv-python
+python3-opencv
