@@ -10,7 +10,9 @@ st.write("""
 # Pistachio species identifier"""
 )
 
-st.caption('Please upload a square image e.g. 100x100, 60x60')
+st.subheader('Please upload a square image e.g. 100x100, 60x60.')
+st.subheader('To avoid error, please ensure that the color depth is set to 24 bit.')
+
 file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
 
 import cv2
