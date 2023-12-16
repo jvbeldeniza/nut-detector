@@ -23,18 +23,11 @@ if 'checkbox_1_selected' not in st.session_state:
 if 'checkbox_2_selected' not in st.session_state:
     st.session_state.checkbox_2_selected = False
 
-# Checkbox buttons to select options
 st.session_state.checkbox_1_selected = st.checkbox("Option 1", key="checkbox_1")
 st.session_state.checkbox_2_selected = st.checkbox("Option 2", key="checkbox_2")
 
-# Check if both checkboxes are selected
 both_checkboxes_selected = st.session_state.checkbox_1_selected and st.session_state.checkbox_2_selected
 
-# Upload button that is disabled until both checkboxes are selected
-upload_button_disabled = not both_checkboxes_selected
-uploaded_file = st.file_uploader("Upload a file", key="file_uploader", disabled=upload_button_disabled)
-
-# Upload button that is disabled until at least one checkbox is selected
 upload_button_disabled = not both_checkboxes_selected
 uploaded_file = st.file_uploader("Choose plant photo from computer",type=["jpg","png"], disabled=upload_button_disabled)
 
