@@ -7,3 +7,7 @@ introducing checkboxes.
 - The image must have a square aspect ratio.
 - The image must have a 24-bit color depth.
 > The following conditions must be met to run the program.
+
+### The program outputs two class names.
+- Kirmizi
+- Siirt
