@@ -16,12 +16,6 @@ st.caption('To avoid error, please ensure that the color depth is set to 24 bit 
 st.divider()
 file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
 
-add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
-)
-
-
 import cv2
 from PIL import Image,ImageOps
 import numpy as np
