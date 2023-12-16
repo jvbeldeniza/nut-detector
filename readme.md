@@ -2,7 +2,7 @@
 
 The model can find the classification of pistachio by analyzing the model uploaded. The model has safeguards to avoid error generation. This is done by
 introducing checkboxes. 
-
+<br>
 ### **Both** checkbox must be checked before the upload button becomes available.
 - The image must have a square aspect ratio.
 - The image must have a 24-bit color depth.
@@ -12,4 +12,4 @@ introducing checkboxes.
 - Kirmizi
 - Siirt
 
-The model is a convolutional neural network, with sigmoid activation function. It was trained on 1,717 pictures of pistachios.
+The model uses convolutional neural network, with sigmoid activation function to predict the pistachios species. It was trained on 1,717 pictures of pistachios.
