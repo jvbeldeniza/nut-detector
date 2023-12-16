@@ -23,9 +23,9 @@ if 'checkbox_1_selected' not in st.session_state:
 if 'checkbox_2_selected' not in st.session_state:
     st.session_state.checkbox_2_selected = False
 
-st.write('The picture that I am uploading')
-st.session_state.checkbox_1_selected = st.checkbox("has a square aspect ratio", key="checkbox_1")
-st.session_state.checkbox_2_selected = st.checkbox("has a 24-bit color depth", key="checkbox_2")
+st.write('The picture that I am uploading:')
+st.session_state.checkbox_1_selected = st.checkbox("has a square aspect ratio.", key="checkbox_1")
+st.session_state.checkbox_2_selected = st.checkbox("has a 24-bit color depth.", key="checkbox_2")
 
 both_checkboxes_selected = st.session_state.checkbox_1_selected and st.session_state.checkbox_2_selected
 
@@ -55,5 +55,5 @@ else:
     st.image(image,use_column_width=True)
     prediction=import_and_predict(image,model)
     class_names=['kirmizi','siirt']
-    string="This is a "+class_names[prediction]+"nut"
+    string="This is a "+class_names[prediction]+" nut."
     st.info(string)
