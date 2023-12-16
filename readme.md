@@ -20,4 +20,4 @@ The image used is licensed under CC0.
 
 Note:
 
-On small screens the sidebar may not displayed immediately, kindly press the expand button to access more information.
+On small screens the sidebar may not be displayed immediately, kindly press the expand button to access more information.
