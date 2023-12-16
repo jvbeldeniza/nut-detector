@@ -10,7 +10,7 @@ st.write("""
 # Pistachio species identifier"""
 )
 st.divider()
-st.image('pexels-pixabay-52521.jpg',width=700)
+st.image('pexels-pixabay-52521.jpg')
 st.divider()
 st.write('To avoid error, please ensure that the color depth is set to 24 bit & to upload a square image. (e.g. 100x100, 60x60)')
 st.divider()
