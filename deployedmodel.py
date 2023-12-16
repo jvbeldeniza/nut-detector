@@ -9,6 +9,8 @@ model=load_model()
 st.write("""
 # Pistachio species identifier"""
 )
+
+st.caption('Please upload a square image e.g. 100x100, 60x60')
 file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
 
 import cv2
