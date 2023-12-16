@@ -35,7 +35,7 @@ upload_button_disabled = not both_checkboxes_selected
 uploaded_file = st.file_uploader("Upload a file", key="file_uploader", disabled=upload_button_disabled)
 
 # Upload button that is disabled until at least one checkbox is selected
-upload_button_disabled = not st.session_state.both_checkboxes_selected
+upload_button_disabled = not both_checkboxes_selected
 uploaded_file = st.file_uploader("Choose plant photo from computer",type=["jpg","png"], disabled=upload_button_disabled)
 
 
