@@ -34,8 +34,11 @@ uploaded_file = st.file_uploader("Choose plant photo from computer",type=["jpg",
 
 
 st.sidebar.write('This model aims to classify the species \n of the uploaded image.')
-st.sidebar.caption('Link to the github repo -> https://github.com/jvbeldeniza/nut-detector')
 st.sidebar.caption('Kindly tick all the checkbox to proceed')
+st.text("")
+st.text("")
+
+st.sidebar.caption('Link to the github repo -> https://github.com/jvbeldeniza/nut-detector')
 
 
 import cv2
