@@ -15,7 +15,7 @@ st.divider()
 st.caption('To avoid error, please ensure that the color depth is set to 24 bit & to upload a square image e.g. 100x100, 60x60.')
 st.divider()
 file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
-
+st.sidebar.write('This model aims to classify the species of the uploaded image.')
 import cv2
 from PIL import Image,ImageOps
 import numpy as np
