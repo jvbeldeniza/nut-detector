@@ -12,6 +12,6 @@ introducing checkboxes.
 - Kirmizi
 - Siirt
 
--The model uses convolutional neural network, with sigmoid activation function to predict the pistachios species. It was trained on 1,717 pictures of pistachios.
+- The model uses convolutional neural network, with sigmoid activation function to predict the pistachios species. It was trained on 1,717 pictures of pistachios.
 
--The image used is licensed under CC0.
+- The image used is licensed under CC0.
