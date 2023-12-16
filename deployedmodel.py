@@ -9,6 +9,7 @@ model=load_model()
 st.write("""
 # Pistachio species identifier"""
 )
+st.image('pexels-pixabay-52521.jpg', caption='nuts')
 st.divider()
 st.caption('To avoid error, please ensure that the color depth is set to 24 bit & to upload a square image e.g. 100x100, 60x60.')
 st.divider()
