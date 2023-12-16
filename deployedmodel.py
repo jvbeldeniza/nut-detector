@@ -1,7 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 
-@st.cache_data()
+@st.cache_resource
 def load_model():
   model=tf.keras.models.load_model('model.h5')
   return model
@@ -26,7 +26,7 @@ def import_and_predict(image_data,model):
     prediction = (prediction > 0.5).astype(int)[0][0]
     return prediction
 if file is None:
-    st.text("Please upload an image file")
+    st.caption("Please upload an image file")
 else:
     image=Image.open(file)
     st.image(image,use_column_width=True)
