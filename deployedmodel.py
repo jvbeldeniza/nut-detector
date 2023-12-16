@@ -22,8 +22,8 @@ if 'checkbox_selected' not in st.session_state:
 
 # Checkbox buttons to select options
 selected_options = st.checkbox("Option 1", key="checkbox_1")
-selected_options |= st.checkbox("Option 2", key="checkbox_2")
-selected_options |= st.checkbox("Option 3", key="checkbox_3")
+selected_options = st.checkbox("Option 2", key="checkbox_2")
+
 
 # Update session state based on checkbox button selection
 st.session_state.checkbox_selected = selected_options
