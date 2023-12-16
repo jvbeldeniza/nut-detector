@@ -21,3 +21,5 @@ The image used is licensed under CC0.
 Note:
 
 On small screens the sidebar may not be displayed immediately, kindly press the expand button to access more information.
+
+Try the web app here -> https://jvbeldeniza-nut-detector-deployedmodel.streamlit.app/
