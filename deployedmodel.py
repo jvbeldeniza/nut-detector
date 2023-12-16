@@ -34,11 +34,10 @@ uploaded_file = st.file_uploader("Upload a file", key="file_uploader", disabled=
 
 # Display uploaded file content if available
 if uploaded_file is not None:
-    st.write("File content:")
-    st.write(uploaded_file.read())
+    file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
 
 
-# file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
+
 st.sidebar.write('This model aims to classify the species of the uploaded image.')
 import cv2
 from PIL import Image,ImageOps
