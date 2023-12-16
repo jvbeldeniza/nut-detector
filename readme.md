@@ -12,4 +12,4 @@ introducing checkboxes.
 - Kirmizi
 - Siirt
 
-#### The model is a convolutional neural network, with sigmoid activation function. It was trained on 1,717 pictures of pistachios.
+The model is a convolutional neural network, with sigmoid activation function. It was trained on 1,717 pictures of pistachios.
