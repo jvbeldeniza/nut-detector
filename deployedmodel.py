@@ -6,7 +6,7 @@ def load_model():
   model=tf.keras.models.load_model('model.h5')
   return model
 model=load_model()
-st.write("""
+st.title("""
 # Pistachio species identifier"""
 )
 
