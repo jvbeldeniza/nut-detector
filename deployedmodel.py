@@ -28,6 +28,7 @@ st.session_state.checkbox_2_selected = st.checkbox("has a 24-bit color depth.", 
 both_checkboxes_selected = st.session_state.checkbox_1_selected and st.session_state.checkbox_2_selected
 
 upload_button_disabled = not both_checkboxes_selected
+st.text("")
 uploaded_file = st.file_uploader("Choose plant photo from computer",type=["jpg","png"], disabled=upload_button_disabled)
 
 
