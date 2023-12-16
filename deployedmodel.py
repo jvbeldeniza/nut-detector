@@ -46,10 +46,10 @@ def import_and_predict(image_data,model):
     prediction=model.predict(img_reshape)
     prediction = (prediction > 0.5).astype(int)[0][0]
     return prediction
-if file is None:
+if uploaded_file is None:
     st.caption("Please upload an image file")
 else:
-    image=Image.open(file)
+    image=Image.open(uploaded_file)
     st.image(image,use_column_width=True)
     prediction=import_and_predict(image,model)
     class_names=['kirmizi','siirt']
