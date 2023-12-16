@@ -15,8 +15,6 @@ st.divider()
 st.write('To avoid error, please ensure that the color depth is set to 24 bit & to upload a square image e.g. 100x100, 60x60.')
 st.divider()
 
-
-
 if 'checkbox_1_selected' not in st.session_state:
     st.session_state.checkbox_1_selected = False
 
